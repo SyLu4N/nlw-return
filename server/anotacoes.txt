@@ -1,0 +1,22 @@
+------------------------------EXPRESS---------------------------------
+Express no back end trabalha a parte de rotas Ex:
+  Caso o o usuário acesse http://localhost:3333/contatos executar
+  tão ação. Nos ajuda a lidar com rotas na nossa aplicação.
+
+scripts vai ser o comando para a execução Ex:
+  "dev": "ts-node-dev src/server.ts"
+
+app.listen = Ouço a porta tal Ex:
+  app.listen(3333, () => {
+  console.log('HTTP server running!');
+  console.log('http://localhost/3333/');
+});
+
+
+---------------------------------------------------------------
+
+
+
+
+
+NODEMAILER PARA ENVIO DE EMAIL-S
