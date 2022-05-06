@@ -5,6 +5,5 @@ export interface FeedbackCreateProps {
 }
 
 export interface FeedbackRepository {
-  // eslint-disable-next-line no-unused-vars
   create: (data: FeedbackCreateProps) => Promise<void>;
 }
