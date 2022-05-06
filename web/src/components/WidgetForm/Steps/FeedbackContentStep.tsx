@@ -10,15 +10,11 @@ interface FeedbackContentStepProps {
   onFeedbackSent: () => void;
 }
 
-export function FeedbackContentStep({
-  feedbackType,
-  onFeedbackRestartRequested,
-  onFeedbackSent,
-}: FeedbackContentStepProps) {
+export function FeedbackContentStep(props: FeedbackContentStepProps) {
   const [screenshoat, setScreenshoat] = useState<string | null>(null);
   const [comment, setComment] = useState('');
 
-  const feedbackTypeInfo = feedbackTypes[feedbackType];
+  const feedbackTypeInfo = feedbackTypes[props.feedbackType];
 
   function handleSubmitFeedback(e: FormEvent) {
     e.preventDefault();
@@ -27,7 +23,7 @@ export function FeedbackContentStep({
       comment,
     });
 
-    onFeedbackSent();
+    props.onFeedbackSent();
   }
 
   return (
@@ -38,7 +34,7 @@ export function FeedbackContentStep({
           className="left-5 absolute text-zinc-400 hover:text-zinc-100"
         >
           <ArrowLeft
-            onClick={onFeedbackRestartRequested}
+            onClick={props.onFeedbackRestartRequested}
             weight="bold"
             className="w-4 h-4 top-5"
           />

@@ -8,10 +8,7 @@ interface ScreenshoatButtonProps {
   screenshoat: string | null;
 }
 
-export function ScreenshotButton({
-  onScreenshotTook,
-  screenshoat,
-}: ScreenshoatButtonProps) {
+export function ScreenshotButton(props: ScreenshoatButtonProps) {
   const [isTakingScreenshot, setIsTakingScreenshot] = useState(false);
 
   async function handleTakeScreenshot() {
@@ -21,18 +18,18 @@ export function ScreenshotButton({
     );
     const base64image = canvas.toDataURL('image/png');
 
-    onScreenshotTook(base64image);
+    props.onScreenshotTook(base64image);
     setIsTakingScreenshot(false);
   }
 
-  if (screenshoat) {
+  if (props.screenshoat) {
     return (
       <button
         type="button"
         className="p-1 w-10 h-10 roudend-md border-transparent flex justify-end items-end text-zinc-400 hover:text-zinc-100 transition-colors"
-        onClick={() => onScreenshotTook(null)}
+        onClick={() => props.onScreenshotTook(null)}
         style={{
-          backgroundImage: `url(${screenshoat})`,
+          backgroundImage: `url(${props.screenshoat})`,
           backgroundPosition: 'right bottom',
           backgroundSize: 180,
         }}
