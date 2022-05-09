@@ -29,12 +29,6 @@ export function FeedbackContentStep({
     setIsSendFeeback(true);
 
     console.log(screenshot);
-    await api.post('/feedbacks', {
-      type: feedbackType,
-      comment,
-      screenshot,
-    });
-
     setIsSendFeeback(false);
     onFeedbackSent();
   }
