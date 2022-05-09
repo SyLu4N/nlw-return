@@ -41,4 +41,3 @@
    <h6 align="center">
    <a href="#"><img src="./assets/backEndVscode.gif" alt="Funcionamento do frontEnd"></a><br>
  </h6>
- <h2></h2>
