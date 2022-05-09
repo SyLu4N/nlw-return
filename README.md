@@ -16,7 +16,7 @@
 
  <h1>✅Project Front-End</h1>
 
- <h3>📚 Funcionamento</h3> 
+ <h3> Funcionamento</h3> 
  
  <h6 align="center">
    <a href="#"><img src="./assets/frontEnd.gif" alt="Funcionamento do frontEnd"></a><br>
@@ -28,16 +28,15 @@
  </h6>
  <h2></h2>
 
-  <h3>📚 Código</h3>
+  <h3> Código</h3>
 
    <h6 align="center">
    <a href="#"><img src="./assets/frontEndVscode.gif" alt="Funcionamento do frontEnd"></a><br>
  </h6>
- <h2></h2>
 
   <h1>✅Project Back-End</h1>
 
-  <h3>📚 Código</h3>
+  <h3> Código</h3>
 
    <h6 align="center">
    <a href="#"><img src="./assets/backEndVscode.gif" alt="Funcionamento do frontEnd"></a><br>
