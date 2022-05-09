@@ -3,12 +3,6 @@ import cors from 'cors';
 
 import { routes } from './routes';
 
-// Get mostrar
-// Post Cadastrar
-// Pust atualizar de um cadastro
-// Patch atualizar uma informação unica de um cadastro
-// Delete para deletar
-
 const app = express();
 
 app.use(cors());

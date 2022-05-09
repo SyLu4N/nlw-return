@@ -6,3 +6,4 @@ export interface SendMailProps {
 export interface MailAdapter {
   sendMail: (data: SendMailProps) => Promise<void>;
 }
+  
